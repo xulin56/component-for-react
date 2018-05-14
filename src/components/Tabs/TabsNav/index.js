@@ -21,7 +21,7 @@ export default class Tabs extends React.Component{
                     {
                       tab.map((item,index)=>{
                         return (
-                          <li key={index} onClick={()=>{this.setState({showItem:index});tabClick && tabClick(index)}} className={showItem==index?'active':''}>
+                          <li key={index} onClick={()=>{this.setState({showItem:index});tabClick && tabClick(item,index)}} className={showItem==index?'active':''}>
                               {
                                 item.icon
                                 ?
