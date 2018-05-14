@@ -5,6 +5,7 @@ import { Router,Route,Switch} from 'react-router';
 import createHistory from 'history/createBrowserHistory';
 import Home from 'views/Home';
 import TestYyd from 'views/TestYyd';
+import TestHxl from 'views/TestHxl';
 
 export const history = createHistory();
 
@@ -17,6 +18,7 @@ class App extends React.Component{
                     <Route path='/' exact component={Home}/>
                     <Route path='/home' component={Home}/>
                     <Route path='/test_yyd' component={TestYyd}/>
+                    <Route path='/test_hxl' component={TestHxl}/>
                 </Switch>
             </Router>
         {/*</Provider>*/}

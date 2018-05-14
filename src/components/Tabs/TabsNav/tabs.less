@@ -1,0 +1,20 @@
+@import '../../style/size';
+@import '../../style/color';
+.tabs {
+  .tabs-nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      flex: 1;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: @tabs-height;
+      cursor: pointer;
+    }
+    li.active {
+      border-bottom:@tabs-bottom-border solid @tab-border-color;
+    }
+  }
+}
