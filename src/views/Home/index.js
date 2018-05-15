@@ -47,7 +47,7 @@ export default class Home extends React.Component {
                         name="demo"
                         value={demo}
                         onChange={this.change}
-                        placeholder='请输入选项'                        
+                        placeholder='请输入选项'
                         config={{
                             options:[{
                                 label:'选项A',
@@ -76,7 +76,7 @@ export default class Home extends React.Component {
                         }
                         }
                     />
-                
+
                 </div>
             <div style={{'clear':'both'}}>
                 <Pagination total={total}

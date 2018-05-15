@@ -8,6 +8,14 @@ export default class Tabs extends React.Component{
     static props = {
         tab : propTypes.array.isRequired,
         tabClick : propTypes.func,
+        defaultActiveKey : propTypes.number,
+    }
+    componentDidMount() {
+      if(this.props.defaultActiveKey){
+        this.setState({
+            showItem : this.props.defaultActiveKey
+        })
+      }
     }
     state = {
       showItem : 0
